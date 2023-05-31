@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormTest2</title>
+</head>
+
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <form>
+        <h2>Formulario</h2>
+        Nombre:<br>
+        <input type="text" name="nom" placeholder="Ingrese su nombre" required><br>
+        <br>Apellidos:<br>
+        <input type="text" name="ape" placeholder="Ingrese su apellido" required><br>
+        <br>Edad:<br>
+        <input type="number" name="edad" min="18" max="100" placeholder="Edad" required><br>
+        <br>E-mail:<br>
+        <input type="email" name="email" placeholder="Ingrese su email" required><br>
+        <br>Genero:<br>
+        <input type="radio" name="genero" value="femenino" required>Femenino<br>
+        <input type="radio" name="genero" value="masculino" required>Masculino<br>
+        <input type="radio" name="genero" value="otro" required>Otro<br>
+        <br>Fecha de nacimiento:<br>
+        <input type="date" name="fecha" required><br>
+        <br>Empresa:<br>
+        <select name="opciones">
+            <option value="#1">Empresa #1</option>
+            <option value="#2">Empresa #2</option>
+            <option value="#3">Empresa #3</option>
+        </select><br>
+        <br>Documento:<br>
+        <input type="file" name="archivo" accept=".pdf, .docx, .doc" required><br>
+        <br><input type="checkbox" name="condicion">Acepto los términos y condiciones del programa<br>
+        <br><button type="submit" name="boton" onclick="">Enviar</button>
+    </form>
+</body>
+
+</html>

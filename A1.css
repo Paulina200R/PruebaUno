@@ -1,0 +1,22 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav__menu {
+    text-decoration: none;
+    color: white;
+    transition: 0.5;
+    list-style: none;
+    background-color: black;
+
+}
+.nav__menu:hover{
+    color: yellow;
+}
+.nav__items li a{
+    width: 100%;
+    display: block;
+}
+.nav__items > a {
+    float: left;
+    padding: 5px 5px;
+}
