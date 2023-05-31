@@ -5,28 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FormTest</title>
+    <title>F1B</title>
+    <link rel="shortcut icon" href="img/download-removebg-preview.ico">
 </head>
 
 <body>
-    
-    <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
-    <br>
-    <input type="password" name="contrasena" placeholder="Password" required>
-    <br>
-    <input type="email" name="email" placeholder="example@example.com" required>
-    <br>
-    <input type="number" name="edad" min="18" max="99" placeholder="Edad" required>
-    <br>
-    <input type="radio" name="genero" value="masculino" required> Masculino
-    <br>
-    <input type="radio" name="genero" value="femenino" required> Femenino
-    <br>
-    <input type="date" name="fecha_nacimiento" required>
-    <br>
-    <input type="file" name="archivo" accept=".pdf,.doc,.docx">
-    <br>
-    <input type="checkbox" name="acepto_terminos" required> Acepto los términos y condiciones
+    <form action="" method="get"><!--El get muestra la información que se ingrese. Viceversa por parte del post-->
+        <table>
+            <tr>
+                <td><b>Nombre</b></td>
+                <td><b>Control</b></td>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>
+                    <input type="text" placeholder="Ingrese su nombre">
+                </td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td>
+                    <input type="number" placeholder="Ingrese su número">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" placeholder="Ingrese su E-mail">
+                </td>
+            </tr>
+            <tr>
+                <td>Radio</td>
+                <td>
+                    <input type="radio"
+                        name="genero">Femenino<!--Se les pone el mismo nombre para que solo se pueda seleccionar uno-->
+                    <input type="radio" name="genero">Masculino
+                </td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>
+                    <input type="color" name="genero">
+                </td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>
+                    <input type="time">
+                </td>
+            </tr>
+            <tr>
+                <td>Checkbox</td>
+                <td>
+                    <input type="checkbox">Voleibol
+                    <input type="checkbox">Futbol
+                    <input type="checkbox">Basquetball
+                    <input type="checkbox">Natacion
+                </td>
+            </tr>
+            <tr>
+                <td>File</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td>
+                    <input type="range">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>Hidden</td>
+                <td>
+                    <input type="hidden">
+                </td>
+            </tr>
+            <tr>
+                <td>Reset</td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+            <tr>
+                <td>Submit</td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+            <tr>
+                <td>Button</td>
+                <td>
+                    <button>Modificar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Select/Option</td>
+                <td>
+                    <select name="opciones">
+                        <option value="col">Colombia</option>
+                        <option value="ven">Venezuela</option>
+                        <option value="pr" selected>Puerto Rico</option>
+                        <!--Se pone selected para que sea la primera opción en visualizarse-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>TextArea</td>
+                <td>
+                    <textarea cols="20" rows="2"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 
 </html>
